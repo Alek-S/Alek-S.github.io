@@ -6,8 +6,7 @@ a:hover {
     color: #6299E8;
 }
 .profile{
-	margin: auto;
-	width: 50%;
+	text-align: center;
 }
 .headerName{
 	font-family: 'Raleway', sans-serif;
@@ -16,8 +15,8 @@ a:hover {
 	margin-bottom: 0px;
 }
 .profileLinks{
-	margin-left: 150px;
 	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px 5px 0px 5px;
 	font-size: 14px;
 	color: #686868;
 	text-decoration: none;
