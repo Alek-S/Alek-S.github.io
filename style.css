@@ -22,6 +22,7 @@ a:hover {
 	text-decoration: none;
 }
 #Projects{
+	display: none;
 	height: 140px;
 	width: 700px;
 	margin: 60px auto 0px auto;
@@ -40,6 +41,7 @@ a:hover {
 	background-color: #00cc66; 
 }
 #Current{
+	display: none;
 	height: 140px;
 	width: 700px;
 	margin: 50px auto 0px auto;
@@ -58,6 +60,7 @@ a:hover {
 	background-color: #ff4d4d; 
 }
 #Previous{
+	display: none;
 	height: 190px;
 	width: 700px;
 	margin: 50px auto 0px auto;
