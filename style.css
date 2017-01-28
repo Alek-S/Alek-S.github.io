@@ -2,6 +2,14 @@ body{
 	margin: 0px 0px 30px 0px;
 	background: #efefef;
 }
+a:link {
+    text-decoration: none;
+    color: #474747;
+}
+a:visited {
+    text-decoration: none;
+    color: #474747;
+}
 a:hover {
     color: #6299E8;
 }
