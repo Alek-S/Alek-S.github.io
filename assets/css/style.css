@@ -160,6 +160,10 @@ p,li{
 	padding-bottom: 3px;
 	background-color: #4da6ff; 
 }
+.linkIco{
+	fill: red;
+	margin-left: 5px;
+}
 
 
 /*mobile*/
