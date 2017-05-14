@@ -60,7 +60,7 @@ p,li{
 	padding-left: 10px;
   	padding-right: 15px;
 }
-.entry:hover{
+.entry:hover, .entry:hover button{
 	background-color: #e6f2ff;
 }
 .seperator{
@@ -164,6 +164,22 @@ p,li{
 	fill: red;
 	margin-left: 5px;
 }
+.moreBtn{
+	display: block;
+	margin: auto;
+	border-radius: 12px;
+	border: solid 1px #a6a6a6;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: .7em;
+	color: #737373;
+	background-color: #ffffff;
+	outline: none;
+}
+.moreSection{
+	display: none;
+
 
 
 /*mobile*/
