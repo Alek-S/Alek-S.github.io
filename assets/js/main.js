@@ -5,8 +5,9 @@
 		//Fade in sections once DOM is ready
 		$('#Summary').delay(delay).fadeIn(fadeLength);
 		$('#Skills').delay(delay * 2).fadeIn(fadeLength);
-		$('#Projects').delay(delay * 3).fadeIn(fadeLength);
-		$('#Current').delay(delay * 4).fadeIn(fadeLength);
+		$('#Articles').delay(delay * 3).fadeIn(fadeLength);
+		$('#Projects').delay(delay * 4).fadeIn(fadeLength);
+		$('#Current').delay(delay * 5).fadeIn(fadeLength);
 
 		$('.moreBtn').on('click', function(){
 			$(this).toggleClass('expanded');
