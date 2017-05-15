@@ -203,7 +203,7 @@ p,li{
 
 /*mobile*/
 @media screen and (max-width:750px){
-  #Summary, #Projects,#Current,#Skills, #work{
+  #Summary, #Articles,#Projects,#Current,#Skills, #work{
     width: 100%;
   }
   .entry{
