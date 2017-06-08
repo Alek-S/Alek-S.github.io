@@ -1,13 +1,12 @@
 	$(document).ready(function(){
-		let delay = 200;
-		let fadeLength = 700;
+		var delay = 200;
+		var fadeLength = 700;
 
 		//Fade in sections once DOM is ready
-		$('#Summary').delay(delay).fadeIn(fadeLength);
-		$('#Skills').delay(delay * 2).fadeIn(fadeLength);
-		$('#Articles').delay(delay * 3).fadeIn(fadeLength);
-		$('#Projects').delay(delay * 4).fadeIn(fadeLength);
-		$('#Current').delay(delay * 5).fadeIn(fadeLength);
+		$('#Skills').delay(delay).fadeIn(fadeLength);
+		$('#Articles').delay(delay * 2).fadeIn(fadeLength);
+		$('#Projects').delay(delay * 3).fadeIn(fadeLength);
+		$('#Current').delay(delay * 4).fadeIn(fadeLength);
 
 		$('.moreBtn').on('click', function(){
 			$(this).toggleClass('expanded');
