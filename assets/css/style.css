@@ -60,7 +60,7 @@ p,li{
 	padding-left: 10px;
   	padding-right: 15px;
 }
-.entry:hover, .entry:hover button{
+.moreBtn:hover{
 	background-color: #e6f2ff;
 }
 .seperator{
@@ -92,7 +92,7 @@ p,li{
 	margin: 0px 0px 0px 0px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	background-color: #ff8533; 
+	background-color: #00cc66;
 }
 .subText{
 	font-family: 'Raleway', sans-serif;
@@ -185,6 +185,45 @@ p,li{
 }
 .moreSection{
 	display: none;
+}
+#view{
+	color: #a6a6a6;  
+	margin:auto;
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 15px;
+	border: 1px solid #cccccc;
+	width: 138px;
+	background-color: #e6e6e6;
+}
+#overview, #projects{
+	padding: 7px;
+	font-family: 'Raleway', sans-serif;
+	font-size: .8em;
+}
+#overview{
+	border-radius: 15px 0px 0px 15px;
+	margin-right: 0px;
+}
+#projects{
+	border-radius: 0px 15px 15px 0px;
+	margin-left: 0px;
+}
+.notActive{
+	outline: none;
+	border:none;
+	color: #a6a6a6;
+	background-color: #e6e6e6;
+}
+.notActive:hover{
+	color: #ffffff;
+	background-color: #cccccc;
+}
+.active{
+	outline: none;
+	background-color: #00aaff;
+	color: #ffffff;
+	border: 1px solid #00aaff;
 }
 
 

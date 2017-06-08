@@ -6,6 +6,7 @@
 
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 	<script src="assets/js/main.js"></script>
+	
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,12 +27,16 @@
 			<p>Currently in the Northwestern six-month web development certificate program, with an anticipated July-2017 completion.</p>
 	</div>
 
+	<div id="view"> 
+		<button class="active" id="overview">Overview</button> <button class="notActive"id="projects">Projects</button>
+	</div>
+
 	<div id="Skills">
 		<H2>Skills</H2>
 
 		<div class="entry">
 			<H3>Languages/Libraries</H3>
-			<p>CSS, HTML, Javascript (jQuery, Underscrore.js/Lodash, C3.js), Node.js, Express, Handlebars, SQL (PostgreSQL, MySQL), Sequelize ORM</p>
+			<p>CSS, HTML, Javascript (jQuery, Underscrore.js/Lodash, C3.js), Node.js, Express, Handlebars, SQL (PostgreSQL, MySQL), Sequelize ORM, MongoDB, Mongoose, React</p>
 		</div>
 
 		<div class="seperator"></div>
@@ -49,37 +54,6 @@
 			<div class="subText">Medium / Hackernoon - May 1, 2017</div>
 			<p>Just because you are using a command line editor does not mean you should have to do a time warp back to the days of green screen CRTs. This guide will walk through the process of setting up Vim to achieve a more Sublime-like experience.</p>
 		</div>
-	</div>
-
-	<div id="Projects">
-		<H2>Projects</H2>
-
-		<div class="entry">
-			<H3><a href="https://github.com/Alek-S/FriendFinder" target="_blank">Friend Finder<img class='linkIco' src="assets/images/link.svg" height="9" width="9"></a></H3>
-			<p>Answer a few questions. Find a friend with the greatest compatibility. <strong>(Full Stack Sample)<strong>.</p>
-		</div>
-
-		<div class="seperator"></div>
-
-		<div class="entry">
-			<H3><a href="https://github.com/Alek-S/TriviaGame" target="_blank">History Class Simulator<img class='linkIco' src="assets/images/link.svg" height="9" width="9"></a></H3>
-			<p>Recreate the nostalgic childhood stress of a timed multiple choice examination. It's the public school testing simulator you never asked for! <strong>(Timers/Ajax Sample)<strong></p>
-		</div>
-
-		<div class="seperator"></div>
-
-		<div class="entry">
-			<H3><a href="https://alek-s.github.io/Define-FIXML/" target="_blank">Define-FIXML<img class='linkIco' src="assets/images/link.svg" height="9" width="9"></a></H3>
-			<p>Web-based FIXML message parser created to expedite issue investigation by internal teams. Also shared with overseas QA team for training purposes. Deliminates and defines the Fixml message into an easy to read table of what it means.</p>
-		</div>
-
-		<div class="seperator"></div>
-
-		<div class="entry">
-			<H3><a href="https://alek-s.github.io/Derivative-Exchange-Lookup/" target="_blank">Derivative Exchange Lookup<img class='linkIco' src="assets/images/link.svg" height="9" width="9"></a></H3>
-			<p>Originally created as a reference tool for use by internal team, the lookup provides information on a financial exchange from the market code.</p>
-		</div>
-		
 	</div>
 
 	<div id="Current">
@@ -103,7 +77,7 @@
 				<p>&#9656; Onboard and trained new employees in CLI workflow for setting up hostname config files per IT guidelines, SSH key creation and connections, Psql usage, and posting cURL POST statements to internal API.</p>
 			</div>
 			
-			<button class='moreBtn'><a>Read More &#9656;</a></button>
+			<button class='moreBtn'>Read More</button>
 
 		</div>
 
@@ -131,12 +105,32 @@
 				<p>&#9656; Investigated, documented and escalated Geneos alerts for hosted clients to ensure SLA compliance.</p>
 			</div>
 
-			<button class='moreBtn'><a>Show More &#9656;</a></button>
+			<button class='moreBtn'>Show More</button>
 
 		</div>
 
 	</div>
 
+	<div id="Projects">
+		<H2>Projects</H2>
+
+		<div class="projectCard">
+			<H3>Friend Finder</H3>
+		</div>
+
+		<div class="projectCard">
+			<H3>History Class Simulator</H3>
+		</div>
+
+		<div class="projectCard">
+			<H3>Define-FIXML</H3>
+		</div>
+
+		<div class="projectCard">
+			<H3>Derivative Exchange Lookup</H3>
+		</div>
+		
+	</div>
 </body>
 
 </html>
