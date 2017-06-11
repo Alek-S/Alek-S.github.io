@@ -1,12 +1,23 @@
 	$(document).ready(function(){
-		var delay = 200;
-		var fadeLength = 700;
 
-		//Fade in sections once DOM is ready
-		$('#Skills').delay(delay).fadeIn(fadeLength);
-		$('#Articles').delay(delay * 2).fadeIn(fadeLength);
-		$('#Current').delay(delay * 3).fadeIn(fadeLength);
+		//====DOCUMENT LOADED====
 
+		//DOM cache
+		var $projectView = $('#projectView');
+		var $overview = $('#overview');
+		var $skills = $('#Skills');
+		var $articles = $('#Articles');
+		var $current = $('#Current');
+		var $overviewSection = $('.overviewSection');
+
+		//fade in overview section
+		overviewFadeIn();
+
+
+
+		//====CLICK EVENTS====
+
+		//show more for work section
 		$('.moreBtn').on('click', function(){
 			$(this).toggleClass('expanded');
 			$(this).siblings('.moreSection').slideToggle();
@@ -19,10 +30,52 @@
 		});
 
 		//switch to project view when clicked
-		$('#projectView').on('click',function(){
+		$projectView.on('click',function(){
+			event.preventDefault();
+
+			//update nav buttons
+			$overview.removeClass('active');
+			$overview.addClass('notActive');
+
+			$projectView.removeClass('notActive');
+			$projectView.addClass('active');
+
 			//hide overview component
-			// $('#Skills').delay(delay).hide();
-			// $('#Articles').delay(delay * 2).hide();
-			// $('#Current').delay(delay * 3).hide();
+			$overviewSection.hide();
+
+			//show projects section
 		});
+
+
+		//switch to overview when clicked
+		$overview.on('click',function(){
+			event.preventDefault();
+
+			//update nav buttons
+			$projectView.removeClass('active');
+			$projectView.addClass('notActive');
+
+			$overview.removeClass('notActive');
+			$overview.addClass('active');
+
+			// hide projects component
+			$('#Projects').hide();
+
+			// show overview section
+			overviewFadeIn();
+		});
+		
+
+		//====FUNCTIONS====
+
+		//Fade in sections once DOM is ready
+		function overviewFadeIn (){
+			var delay = 200;
+			var fadeLength = 700;
+
+			$skills.delay(delay).fadeIn(fadeLength);
+			$articles.delay(delay * 2).fadeIn(fadeLength);
+			$current.delay(delay * 3).fadeIn(fadeLength);
+		}
+
 	});
