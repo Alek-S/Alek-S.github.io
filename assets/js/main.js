@@ -9,9 +9,10 @@
 		var $articles = $('#Articles');
 		var $current = $('#Current');
 		var $overviewSection = $('.overviewSection');
+		var $projectsSection = $('#Projects');
 
 		//fade in overview section
-		overviewFadeIn();
+		overviewFadeIn(true);
 
 
 
@@ -44,6 +45,7 @@
 			$overviewSection.hide();
 
 			//show projects section
+			$projectsSection.fadeIn(200);
 		});
 
 
@@ -59,23 +61,31 @@
 			$overview.addClass('active');
 
 			// hide projects component
-			$('#Projects').hide();
+			$projectsSection.hide();
 
 			// show overview section
-			overviewFadeIn();
+			overviewFadeIn(false);
 		});
 		
 
 		//====FUNCTIONS====
 
-		//Fade in sections once DOM is ready
-		function overviewFadeIn (){
-			var delay = 200;
+		//Fade in overview sections - true/false for 200ms delay
+		function overviewFadeIn(delay){
+			var delayTime = 200;
 			var fadeLength = 700;
 
-			$skills.delay(delay).fadeIn(fadeLength);
-			$articles.delay(delay * 2).fadeIn(fadeLength);
-			$current.delay(delay * 3).fadeIn(fadeLength);
+			if(delay === true){
+				$skills.delay(delayTime).fadeIn(fadeLength);
+				$articles.delay(delayTime * 2).fadeIn(fadeLength);
+				$current.delay(delayTime * 3).fadeIn(fadeLength);
+			}else{
+				$skills.fadeIn(fadeLength);
+				$articles.delay(delayTime).fadeIn(fadeLength);
+				$current.delay(delayTime * 2).fadeIn(fadeLength);
+			}
 		}
 
+		//projectCard fadein
+		//TODO
 	});
