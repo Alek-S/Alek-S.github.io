@@ -17,4 +17,12 @@
 				$(this).html('Show More');
 			}
 		});
+
+		//switch to project view when clicked
+		$('#projectView').on('click',function(){
+			//hide overview component
+			// $('#Skills').delay(delay).hide();
+			// $('#Articles').delay(delay * 2).hide();
+			// $('#Current').delay(delay * 3).hide();
+		});
 	});

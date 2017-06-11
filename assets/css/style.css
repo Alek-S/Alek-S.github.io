@@ -193,10 +193,10 @@ p,li{
 	text-align: center;
 	border-radius: 15px;
 	border: 1px solid #cccccc;
-	width: 139px;
+	width: 138px;
 	background-color: #e6e6e6;
 }
-#overview, #projects{
+#overview, #projectView{
 	padding: 7px;
 	font-family: 'Raleway', sans-serif;
 	font-size: .8em;
@@ -205,7 +205,7 @@ p,li{
 	border-radius: 15px 2px 2px 15px;
 	margin-right: 0px;
 }
-#projects{
+#projectView{
 	border-radius: 2px 15px 15px 2px;
 	margin-left: 0px;
 }
@@ -221,9 +221,10 @@ p,li{
 }
 .active{
 	outline: none;
-	background-color: #00aaff;
+	background: linear-gradient(#72b6f9,#3999f9);
+	/*background-color: #4da6ff;*/
 	color: #ffffff;
-	border: 1px solid #00aaff;
+	border: 1px solid #4da6ff;
 }
 
 
