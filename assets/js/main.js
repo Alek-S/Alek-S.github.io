@@ -10,6 +10,10 @@
 		var $current = $('#Current');
 		var $overviewSection = $('.overviewSection');
 		var $projectsSection = $('#Projects');
+		//projects
+		var $lbb = ('#lbb');
+		var $ff = ('#ff');
+		var $fix = ('#fix');
 
 		//fade in overview section
 		overviewFadeIn(true);
@@ -45,7 +49,7 @@
 			$overviewSection.hide();
 
 			//show projects section
-			$projectsSection.fadeIn(200);
+			$('#Projects').fadeIn(500);
 		});
 
 
@@ -86,6 +90,4 @@
 			}
 		}
 
-		//projectCard fadein
-		//TODO
 	});
