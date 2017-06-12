@@ -175,7 +175,6 @@ p,li{
 	margin-bottom: 20px;
 	text-align: center;
 	border-radius: 15px;
-	/*border: 1px solid #cccccc;*/
 	width: 140px;
 	background-color: #e6e6e6;
 }
@@ -205,8 +204,8 @@ p,li{
 .active{
 	outline: none;
 	background: linear-gradient(#72b6f9,#3999f9);
-	/*background-color: #4da6ff;*/
 	color: #ffffff;
+	border:none;
 	border: 1px solid #4da6ff;
 }
 
@@ -294,12 +293,15 @@ p,li{
 
 
 /*mobile*/
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
   #Summary, #Articles,#Projects,#Current,#Skills, #work{
     width: 100%;
   }
   .projectCard{
 	  border-radius: 0px;
+  }
+  #view{
+	  width: 143px;
   }
   .entry{
   	padding-left: 5px;
