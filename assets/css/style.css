@@ -244,12 +244,12 @@ p,li{
 	font-size: 1.5em;
 	padding-left: 10px;
 	top: 10px;
-	background-color: rgba(255, 255, 255,0.5);
+	background-color: rgba(255, 255, 255,0.85);
 }
 .info{
 	position: relative;
 	bottom: -110px;
-	background-color: rgba(255, 255, 255,0.8);
+	background-color: rgba(255, 255, 255,0.85);
 }
 .tech{
 	line-height: 1.75em;
@@ -277,6 +277,10 @@ p,li{
 }
 .infra{
 	background-color: #000;
+}
+#nyt-search{
+	background: url('../images/nyt-search.gif') no-repeat center;
+	background-size: cover;
 }
 #lbb{
 	background: url('../images/lbb.gif') no-repeat center;
