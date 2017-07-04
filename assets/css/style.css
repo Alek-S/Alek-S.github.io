@@ -170,13 +170,9 @@ p,li{
 
 /*nav section*/
 #view{
-	color: #a6a6a6;  
 	margin:auto;
 	margin-bottom: 20px;
 	text-align: center;
-	border-radius: 15px;
-	width: 139px;
-	background-color: #e6e6e6;
 }
 #overview, #projectView{
 	padding: 7px;
@@ -206,9 +202,13 @@ p,li{
 	background: linear-gradient(#72b6f9,#3999f9);
 	color: #ffffff;
 	border:none;
-	border: 1px solid #4da6ff;
 }
-
+#view a.active{
+	color: #fff;
+}
+#view a.notActive:hover{
+	color: #fff;
+}
 
 /*Projects Section*/
 #Projects{
@@ -223,7 +223,7 @@ p,li{
 	background-color: #fff;
 	border-radius: 7px;
 	box-shadow: 0px 0px 40px -5px rgba(82,82,82,0.7);
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 .projectCard p{
 	color: #000;
@@ -297,20 +297,34 @@ p,li{
 
 
 /*mobile*/
-@media screen and (max-width:768px){
-  #Summary, #Articles,#Projects,#Current,#Skills, #work{
-    width: 100%;
-  }
-  .projectCard{
-	  border-radius: 0px;
-	  margin-top: 10px;
-	  margin-bottom: 50px;
-  }
-  #view{
-	  width: 143px;
-  }
-  .entry{
-  	padding-left: 5px;
-  	padding-right: 10px;
-  }
+@media screen and (max-width:765px){
+	#Summary, #Articles,#Projects,#Current,#Skills, #work{
+		width: 100%;
+	}
+	.projectCard{
+		border-radius: 0px;
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
+	#view{
+		width: 143px;
+	}
+	.entry{
+		padding-left: 5px;
+		padding-right: 10px;
+	}
+	.tech{
+		line-height: 1.95em;
+		font-size: .55em;
+		padding-bottom: 5px;
+	}
+	.info{
+		position: relative;
+		bottom: -90px;
+		font-size: .85em;
+		background-color: rgba(255, 255, 255,0.85);
+	}
+	.projectCard H2{
+		font-size: 1.3em;
+	}
 }
