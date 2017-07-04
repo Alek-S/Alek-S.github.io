@@ -190,8 +190,7 @@ p,li{
 .notActive{
 	outline: none;
 	border:none;
-	color: #a6a6a6;
-	background-color: #e6e6e6;
+	background-color: #dfdfdf;
 }
 .notActive:hover{
 	color: #ffffff;
