@@ -277,6 +277,10 @@ p,li{
 .infra{
 	background-color: #000;
 }
+#zen{
+	background: url('../images/zen.gif') no-repeat center;
+	background-size: cover;
+}
 #nyt-search{
 	background: url('../images/nyt-search.gif') no-repeat center;
 	background-size: cover;
@@ -285,8 +289,8 @@ p,li{
 	background: url('../images/lbb.gif') no-repeat center;
 	background-size: cover;
 }
-#ff{
-	background: url('../images/ff.gif') no-repeat center;
+#med{
+	background: url('../images/med.gif') no-repeat center;
 	background-size: cover;
 }
 #fix{
