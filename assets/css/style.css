@@ -75,6 +75,11 @@ p,li{
 	margin: 20px auto 50px auto;
 	text-align: center;
 }
+#Summary p{
+	text-align: center;
+	line-height: 170%;
+	font-size: .95em;
+}
 #Articles{
 	display: none;
 	height: auto;
@@ -107,6 +112,11 @@ p,li{
 }
 .workHeader, .workDate{
 	display: inline;
+}
+.workTitle{
+	font-size: .75em;
+	line-height: 170%;
+	color: #595959;
 }
 #Current{
 	display: none;
@@ -171,7 +181,7 @@ p,li{
 /*nav section*/
 #view{
 	margin:auto;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 #overview, #projectView{
