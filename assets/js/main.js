@@ -1,19 +1,17 @@
+'use strict';
+
 $(document).ready(function(){
 
 	//====DOCUMENT LOADED====
 
 	//DOM cache
-	var $projectView = $('#projectView');
-	var $overview = $('#overview');
-	var $skills = $('#Skills');
-	var $articles = $('#Articles');
-	var $current = $('#Current');
-	var $overviewSection = $('.overviewSection');
-	var $projectsSection = $('#Projects');
-	//projects
-	var $lbb = ('#lbb');
-	var $ff = ('#ff');
-	var $fix = ('#fix');
+	const $projectView = $('#projectView');
+	const $overview = $('#overview');
+	const $skills = $('#Skills');
+	const $articles = $('#Articles');
+	const $current = $('#Current');
+	const $overviewSection = $('.overviewSection');
+	const $projectsSection = $('#Projects');
 
 	//fade in overview section
 	overviewFadeIn(true);
@@ -76,8 +74,8 @@ $(document).ready(function(){
 
 	//Fade in overview sections - true/false for 200ms delay
 	function overviewFadeIn(delay){
-		var delayTime = 200;
-		var fadeLength = 700;
+		const delayTime = 200;
+		const fadeLength = 700;
 
 		if(delay === true){
 			$skills.delay(delayTime).fadeIn(fadeLength);
