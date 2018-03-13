@@ -77,8 +77,8 @@ p,li{
 }
 #Summary p{
 	text-align: center;
-	line-height: 170%;
-	font-size: .95em;
+	line-height: 150%;
+	font-size: .90em;
 }
 #Articles{
 	display: none;
