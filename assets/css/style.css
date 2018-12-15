@@ -316,6 +316,9 @@ p,li{
 	#Summary, #Articles,#Projects,#Current,#Skills, #work{
 		width: 100%;
 	}
+	#Summary p {
+		padding-right: 10px;
+	}
 	.projectCard{
 		border-radius: 0px;
 		margin-top: 10px;
