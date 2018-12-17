@@ -3,17 +3,17 @@ $(document).ready(function(){
 	//====DOCUMENT LOADED====
 
 	//DOM cache
-	const $projectView = $('#projectView');
 	const $overview = $('#overview');
 	const $skills = $('#Skills');
 	const $articles = $('#Articles');
 	const $current = $('#Current');
-	const $overviewSection = $('.overviewSection');
 	const $projectsSection = $('#Projects');
 
-	//fade in overview section
-	overviewFadeIn(true);
-
+	let projectView = document.getElementById('projectView');
+	let projects = document.getElementById('Projects');
+	let overview = document.getElementById('overview');
+	let overviewSection = document.getElementsByClassName('overviewSection');
+	let projectsSection = document.getElementsByClassName('projectsSection');
 
 
 	//====CLICK EVENTS====
@@ -31,37 +31,42 @@ $(document).ready(function(){
 	});
 
 	//switch to project view when clicked
-	$projectView.on('click',function(event){
+	projectView.addEventListener('click', event => {
 		event.preventDefault();
 
 		//update nav buttons
-		$overview.removeClass('active');
-		$overview.addClass('notActive');
+		overview.classList.remove("active");
+		overview.classList.add("notActive");
 
-		$projectView.removeClass('notActive');
-		$projectView.addClass('active');
+		projectView.classList.remove("notActive");
+		projectView.classList.add("active");
 
-		//hide overview component
-		$overviewSection.hide();
+		for (let i = 0; i < overviewSection.length; i++) {
+			overviewSection[i].style.display = 'none';
+		}
 
-		//show projects section
-		$('#Projects').fadeIn(500);
+		projects.style.display = 'block';
+
 	});
 
 
 	//switch to overview when clicked
-	$overview.on('click',function(event){
+	overview.addEventListener('click', event => {
 		event.preventDefault();
 
 		//update nav buttons
-		$projectView.removeClass('active');
-		$projectView.addClass('notActive');
+		projectView.classList.remove("active");
+		projectView.classList.add("notActive");
 
-		$overview.removeClass('notActive');
-		$overview.addClass('active');
+		overview.classList.remove("notActive");
+		overview.classList.add("active");
 
 		// hide projects component
 		$projectsSection.hide();
+
+		for (let i = 0; i < projectsSection.length; i++) {
+			projectsSection[i].style.display = 'none';
+		}
 
 		// show overview section
 		overviewFadeIn(false);
