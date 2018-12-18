@@ -2,6 +2,9 @@ body{
 	margin: 0px 0px 30px 0px;
 	background: #efefef;
 }
+input {
+  display: none;
+}
 a:link {
     text-decoration: none;
     color: #474747;
@@ -81,12 +84,12 @@ p,li{
 	font-size: .90em;
 }
 #Articles{
-	display: none;
 	height: auto;
 	width: 700px;
 	margin: 40px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
+	transition: all 1s ease;
 }
 #Articles H2{
 	font-family: 'Raleway', sans-serif;
@@ -119,12 +122,12 @@ p,li{
 	color: #595959;
 }
 #Current{
-	display: none;
 	height: auto;
 	width: 700px;
 	margin: 35px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
+	transition: all 1s ease;
 }		
 #Current H2{
 	font-family: 'Raleway', sans-serif;
@@ -138,12 +141,12 @@ p,li{
 	background-color: #ff4d4d; 
 }
 #Skills{
-	display: none;
 	height: auto;
 	width: 700px;
 	margin: 35px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
+	transition: all 1s ease;
 }		
 #Skills H2{
 	font-family: 'Raleway', sans-serif;
@@ -161,6 +164,7 @@ p,li{
 	margin-left: 5px;
 }
 .moreBtn{
+	cursor: pointer;
 	display: block;
 	margin: auto;
 	border-radius: 12px;
@@ -172,9 +176,13 @@ p,li{
 	color: #737373;
 	background-color: #ffffff;
 	outline: none;
+	width: 100px;
+	text-align: center;
 }
 .moreSection{
-	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 1s ease;
 }
 
 
@@ -222,9 +230,11 @@ p,li{
 /*Projects Section*/
 #Projects{
 	display: none;
+	opacity: 0;
 	height: auto;
 	width: 700px;
 	margin: 40px auto 0px auto;
+	transition: all 1s ease;
 }
 .projectCard{
 	width: 100%;

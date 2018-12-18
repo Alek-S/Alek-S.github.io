@@ -1,89 +1,86 @@
-$(document).ready(function(){
-
-	//====DOCUMENT LOADED====
-
-	//DOM cache
-	const $projectView = $('#projectView');
-	const $overview = $('#overview');
-	const $skills = $('#Skills');
-	const $articles = $('#Articles');
-	const $current = $('#Current');
-	const $overviewSection = $('.overviewSection');
-	const $projectsSection = $('#Projects');
-
-	//fade in overview section
-	overviewFadeIn(true);
+//DOM cache
+const projectView = document.getElementById('projectView');
+const projects = document.getElementById('Projects');
+const overview = document.getElementById('overview');
+const overviewSection = document.getElementsByClassName('overviewSection');
+const projectsSection = document.getElementsByClassName('projectsSection');
+const skills = document.getElementById('Skills');
+const articles = document.getElementById('Articles');
+const current = document.getElementById('Current');
+const entry = document.getElementsByClassName('entry');
+const moreBtn = document.getElementsByClassName('moreBtn');
 
 
+//Fade in overview sections
+const overviewFadeIn = function () {
+	const delayTime = 200;
 
-	//====CLICK EVENTS====
-
-	//show more for work section
-	$('.moreBtn').on('click', function(){
-		$(this).toggleClass('expanded');
-		$(this).siblings('.moreSection').slideToggle();
-
-		if( $(this).hasClass('expanded') ){
-			$(this).html('Show Less');
-		}else{
-			$(this).html('Show More');
-		}
-	});
-
-	//switch to project view when clicked
-	$projectView.on('click',function(event){
-		event.preventDefault();
-
-		//update nav buttons
-		$overview.removeClass('active');
-		$overview.addClass('notActive');
-
-		$projectView.removeClass('notActive');
-		$projectView.addClass('active');
-
-		//hide overview component
-		$overviewSection.hide();
-
-		//show projects section
-		$('#Projects').fadeIn(500);
-	});
-
-
-	//switch to overview when clicked
-	$overview.on('click',function(event){
-		event.preventDefault();
-
-		//update nav buttons
-		$projectView.removeClass('active');
-		$projectView.addClass('notActive');
-
-		$overview.removeClass('notActive');
-		$overview.addClass('active');
-
-		// hide projects component
-		$projectsSection.hide();
-
-		// show overview section
-		overviewFadeIn(false);
-	});
-		
-
-	//====FUNCTIONS====
-
-	//Fade in overview sections - true/false for 200ms delay
-	function overviewFadeIn(delay){
-		const delayTime = 200;
-		const fadeLength = 700;
-
-		if(delay === true){
-			$skills.delay(delayTime).fadeIn(fadeLength);
-			$articles.delay(delayTime * 2).fadeIn(fadeLength);
-			$current.delay(delayTime * 3).fadeIn(fadeLength);
-		}else{
-			$skills.fadeIn(fadeLength);
-			$articles.delay(delayTime).fadeIn(fadeLength);
-			$current.delay(delayTime * 2).fadeIn(fadeLength);
-		}
+	for (let i = 0; i < overviewSection.length; i++) {
+		overviewSection[i].style.display = 'block';
 	}
 
+	setTimeout(function () { skills.style.opacity = 1 }, delayTime);
+	setTimeout(function () { articles.style.opacity = 1 }, delayTime * 2);
+	setTimeout(function () { current.style.opacity = 1 }, delayTime * 3);
+}
+
+
+//====CLICK EVENTS====
+
+//switch to project view when clicked
+projectView.addEventListener('click', function (event) {
+	event.preventDefault();
+
+	//update nav buttons
+	overview.classList.remove("active");
+	overview.classList.add("notActive");
+
+	projectView.classList.remove("notActive");
+	projectView.classList.add("active");
+
+	// hide overview and show projects
+	for (let i = 0; i < overviewSection.length; i++) {
+		overviewSection[i].style.display = 'none';
+		overviewSection[i].style.opacity = 0;
+	}
+
+	projects.style.display = 'block';
+	setTimeout(function () { projects.style.opacity = 1 }, 100);
 });
+
+
+
+//switch to overview when clicked
+overview.addEventListener('click', function (event) {
+	event.preventDefault();
+
+	//update nav buttons
+	projectView.classList.remove("active");
+	projectView.classList.add("notActive");
+
+	overview.classList.remove("notActive");
+	overview.classList.add("active");
+
+	// hide projects component and show overview
+	projects.style.display = 'none';
+	projects.style.opacity = 0;
+
+	overviewFadeIn();
+});
+
+
+// Show more/less info toggle
+for (let i = 0; i < moreBtn.length; i++) {
+	moreBtn[i].addEventListener('click', function (event) {
+		const thisMoreSection = moreBtn[i].parentNode.getElementsByClassName('moreSection')[0];
+		const height = thisMoreSection.getAttribute('data-height')
+
+		if (!thisMoreSection.style.height || thisMoreSection.style.height === '0px'){
+			thisMoreSection.style.height = `${height}px`;
+			moreBtn[i].innerText = 'Show Less';
+		} else {
+			thisMoreSection.style.height = '0';
+			moreBtn[i].innerText = 'Show More';
+		}
+	});
+}
