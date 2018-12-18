@@ -7,42 +7,28 @@ const projectsSection = document.getElementsByClassName('projectsSection');
 const skills = document.getElementById('Skills');
 const articles = document.getElementById('Articles');
 const current = document.getElementById('Current');
+const entry = document.getElementsByClassName('entry');
+const moreBtn = document.getElementsByClassName('moreBtn');
 
 
-
-//Fade in overview sections - true/false for 200ms delay
-const overviewFadeIn = () => {
+//Fade in overview sections
+const overviewFadeIn = function () {
 	const delayTime = 200;
 
 	for (let i = 0; i < overviewSection.length; i++) {
 		overviewSection[i].style.display = 'block';
 	}
 
-	setTimeout(() => { skills.style.opacity = 1 }, delayTime);
-	setTimeout(() => { articles.style.opacity = 1 }, delayTime * 2);
-	setTimeout(() => { current.style.opacity = 1 }, delayTime * 3);
+	setTimeout(function () { skills.style.opacity = 1 }, delayTime);
+	setTimeout(function () { articles.style.opacity = 1 }, delayTime * 2);
+	setTimeout(function () { current.style.opacity = 1 }, delayTime * 3);
 }
-
 
 
 //====CLICK EVENTS====
 
-//show more for work section
-$('.moreBtn').on('click', function(){
-	$(this).toggleClass('expanded');
-	$(this).siblings('.moreSection').slideToggle();
-
-	if( $(this).hasClass('expanded') ){
-		$(this).html('Show Less');
-	}else{
-		$(this).html('Show More');
-	}
-});
-
-
-
 //switch to project view when clicked
-projectView.addEventListener('click', event => {
+projectView.addEventListener('click', function (event) {
 	event.preventDefault();
 
 	//update nav buttons
@@ -59,14 +45,13 @@ projectView.addEventListener('click', event => {
 	}
 
 	projects.style.display = 'block';
-	setTimeout(() => { projects.style.opacity = 1 }, 100);
+	setTimeout(function () { projects.style.opacity = 1 }, 100);
 });
 
 
 
-
 //switch to overview when clicked
-overview.addEventListener('click', event => {
+overview.addEventListener('click', function (event) {
 	event.preventDefault();
 
 	//update nav buttons
@@ -82,3 +67,20 @@ overview.addEventListener('click', event => {
 
 	overviewFadeIn();
 });
+
+
+// Show more/less info toggle
+for (let i = 0; i < moreBtn.length; i++) {
+	moreBtn[i].addEventListener('click', function (event) {
+		const thisMoreSection = moreBtn[i].parentNode.getElementsByClassName('moreSection')[0];
+		const height = thisMoreSection.getAttribute('data-height')
+
+		if (!thisMoreSection.style.height || thisMoreSection.style.height === '0px'){
+			thisMoreSection.style.height = `${height}px`;
+			moreBtn[i].innerText = 'Show Less';
+		} else {
+			thisMoreSection.style.height = '0';
+			moreBtn[i].innerText = 'Show More';
+		}
+	});
+}

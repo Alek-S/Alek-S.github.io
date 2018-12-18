@@ -2,6 +2,9 @@ body{
 	margin: 0px 0px 30px 0px;
 	background: #efefef;
 }
+input {
+  display: none;
+}
 a:link {
     text-decoration: none;
     color: #474747;
@@ -164,6 +167,7 @@ p,li{
 	margin-left: 5px;
 }
 .moreBtn{
+	cursor: pointer;
 	display: block;
 	margin: auto;
 	border-radius: 12px;
@@ -175,9 +179,13 @@ p,li{
 	color: #737373;
 	background-color: #ffffff;
 	outline: none;
+	width: 100px;
+	text-align: center;
 }
 .moreSection{
-	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 1s ease;
 }
 
 
