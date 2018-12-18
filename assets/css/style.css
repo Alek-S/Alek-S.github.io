@@ -89,7 +89,7 @@ p,li{
 	margin: 40px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
-	transition: all 1s ease;
+	transition: opacity 1s ease;
 }
 #Articles H2{
 	font-family: 'Raleway', sans-serif;
@@ -127,7 +127,7 @@ p,li{
 	margin: 35px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
-	transition: all 1s ease;
+	transition: opacity 1s ease;
 }		
 #Current H2{
 	font-family: 'Raleway', sans-serif;
@@ -146,7 +146,7 @@ p,li{
 	margin: 35px auto 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
-	transition: all 1s ease;
+	transition: opacity 1s ease;
 }		
 #Skills H2{
 	font-family: 'Raleway', sans-serif;
@@ -234,7 +234,7 @@ p,li{
 	height: auto;
 	width: 700px;
 	margin: 40px auto 0px auto;
-	transition: all 1s ease;
+	transition: opacity 1s ease;
 }
 .projectCard{
 	width: 100%;
@@ -327,7 +327,7 @@ p,li{
 		width: 100%;
 	}
 	#Summary p {
-		padding-right: 10px;
+		padding-right: 15px;
 	}
 	.projectCard{
 		border-radius: 0px;
