@@ -66,7 +66,7 @@ p,li{
 .moreBtn:hover{
 	background-color: #e6f2ff;
 }
-.seperator{
+.separator{
 	border-style: none none dotted none;
 	border-width: 1px;
 	color: #cccccc;
