@@ -16,6 +16,8 @@ a:visited {
 a:hover {
     color: #6299E8;
 }
+
+
 .profile{
 	width: 100%;
 	text-align: center;
@@ -355,4 +357,8 @@ p,li{
 	.projectCard H2{
 		font-size: 1.3em;
 	}
+}
+
+.bright-anchor {
+	color: #4da6ff !important;
 }
