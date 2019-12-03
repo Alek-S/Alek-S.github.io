@@ -239,6 +239,7 @@ p,li{
 	transition: opacity 1s ease;
 }
 .projectCard{
+	overflow: hidden;
 	width: 100%;
 	height: 250px;
 	background-color: #fff;
@@ -264,15 +265,24 @@ p,li{
 	font-weight: 400;
 	font-size: 1.5em;
 	padding-left: 10px;
-	top: 10px;
-	background-color: rgba(255, 255, 255,0.9);
+	/* top: 5px; */
+	background-color: rgba(255, 255, 255,0.85);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
+	z-index: 50;
+}
+.projectCard video{
+	position: relative;
+	top: -137px;
+}
+#select-run video {
+	top: -150px;
 }
 .info{
 	position: relative;
 	bottom: -110px;
-	background-color: rgba(255, 255, 255,0.9);
+	background-color: rgba(255, 255, 255,0.85);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
+	z-index: 50;
 }
 .tech{
 	line-height: 1.75em;
@@ -304,7 +314,7 @@ p,li{
 	background: url('../images/zen.gif') no-repeat center;
 	background-size: cover;
 }
-#nyt-search{
+/* #nyt-search{
 	background: url('../images/nyt-search.gif') no-repeat center;
 	background-size: cover;
 }
@@ -319,7 +329,7 @@ p,li{
 #fix{
 	background: url('../images/fix.gif') no-repeat center;
 	background-size: cover;
-}
+} */
 
 
 /*mobile*/
@@ -334,6 +344,7 @@ p,li{
 		border-radius: 0px;
 		margin-top: 10px;
 		margin-bottom: 50px;
+		height: 200px;
 	}
 	#view{
 		width: 143px;
@@ -349,7 +360,7 @@ p,li{
 	}
 	.info{
 		position: relative;
-		bottom: -100px;
+		bottom: -60px;
 		font-size: .85em;
 		background-color: rgba(255, 255, 255,0.85);
 	}
