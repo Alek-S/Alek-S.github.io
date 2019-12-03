@@ -1,6 +1,6 @@
 body{
 	margin: 0px 0px 30px 0px;
-	background: #efefef;
+	background: #F1F3F4;
 }
 input {
   display: none;
@@ -14,7 +14,7 @@ a:visited {
     color: #474747;
 }
 a:hover {
-    color: #6299E8;
+    color: #206BD5;
 }
 
 
@@ -57,7 +57,7 @@ p,li{
 	margin-top: 0px;
 	padding-top: 5px;
 	margin-bottom: 7px;
-	color: #737373;   
+	color: #6E6E6E;   
 }
 .entry{
 	padding-top: 13px;
@@ -285,7 +285,6 @@ p,li{
 	padding-bottom: 2px;
 	padding-left: 5px;
 	padding-right: 5px;
-	/*background-color: #4da6ff;*/
 	border-radius: 3px;
 	margin:2px;
 }
@@ -360,5 +359,5 @@ p,li{
 }
 
 .bright-anchor {
-	color: #4da6ff !important;
+	color: #2173BA !important;
 }
