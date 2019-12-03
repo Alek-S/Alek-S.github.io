@@ -1,3 +1,3 @@
-### Alek-S.github.io 
+### Homepage - alekshnayder.com
 
 [Link](https://alekshnayder.com)
