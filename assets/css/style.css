@@ -265,8 +265,7 @@ p,li{
 	font-weight: 400;
 	font-size: 1.5em;
 	padding-left: 10px;
-	/* top: 5px; */
-	background-color: rgba(255, 255, 255,0.85);
+	background-color: rgba(255, 255, 255,0.87);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
 	z-index: 50;
 }
@@ -279,11 +278,15 @@ p,li{
 }
 .info{
 	position: relative;
-	bottom: -110px;
-	background-color: rgba(255, 255, 255,0.85);
+	bottom: -75px;
+	background-color: rgba(255, 255, 255,0.87);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
 	z-index: 50;
 }
+#select-run .info, #pseudozen .info {
+	bottom: -112px;
+}
+
 .tech{
 	line-height: 1.75em;
 	font-size: .75em;
@@ -314,22 +317,6 @@ p,li{
 	background: url('../images/zen.gif') no-repeat center;
 	background-size: cover;
 }
-/* #nyt-search{
-	background: url('../images/nyt-search.gif') no-repeat center;
-	background-size: cover;
-}
-#lbb{
-	background: url('../images/lbb.gif') no-repeat center;
-	background-size: cover;
-}
-#med{
-	background: url('../images/med.gif') no-repeat center;
-	background-size: cover;
-}
-#fix{
-	background: url('../images/fix.gif') no-repeat center;
-	background-size: cover;
-} */
 
 
 /*mobile*/
@@ -360,12 +347,35 @@ p,li{
 	}
 	.info{
 		position: relative;
-		bottom: -60px;
-		font-size: .85em;
+		bottom: -30px;
+		font-size: .95em;
 		background-color: rgba(255, 255, 255,0.85);
+	}
+	#select-run .info {
+		bottom: -70px;
+	} 
+	#pseudozen .info {
+		bottom: -45px;
 	}
 	.projectCard H2{
 		font-size: 1.3em;
+	}
+}
+@media screen and (max-width:500px){
+	.projectCard{
+		height: 140px;
+	}
+	.info{
+		bottom: -15px;
+	}
+	#select-run .info {
+		bottom: -30px;
+	} 
+	#pseudozen .info {
+		bottom: -25px;
+	}
+	.tech {
+		display: none;
 	}
 }
 
