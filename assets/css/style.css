@@ -273,6 +273,9 @@ p,li{
 	position: relative;
 	top: -137px;
 }
+#swiftsheet video {
+	top: -180px;
+}
 #select-run video {
 	top: -150px;
 }
