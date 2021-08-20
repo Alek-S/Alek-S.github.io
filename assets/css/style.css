@@ -17,6 +17,13 @@ a:hover {
     color: #206BD5;
 }
 
+a.priority-link {
+	color: #206BD5;
+	font-style: italic;
+}
+a.priority-link:hover {
+	text-decoration: underline; 
+}
 
 .profile{
 	width: 100%;
@@ -320,6 +327,11 @@ p,li{
 	background: url('../images/zen.gif') no-repeat center;
 	background-size: cover;
 }
+
+/* .priority-link {
+	color: #206BD5 !important;
+	text-decoration: underline !important;
+} */
 
 
 /*mobile*/
