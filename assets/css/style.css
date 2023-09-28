@@ -34,7 +34,8 @@ a.priority-link:hover {
 }
 .headerName{
 	font-family: 'Raleway', sans-serif;
-	font-size: 2.3em;
+	font-size: 2.5em;
+	letter-spacing: 2px;
 	color: #545454;
 	margin-bottom: 15px;
 	font-weight: 300;
@@ -85,13 +86,16 @@ p,li{
 	height: auto;
 	width: 700px;
 	margin: 20px auto 50px auto;
-	text-align: center;
+	text-align: justify;
 }
 #Summary p{
-	text-align: center;
+	text-align: justify;
 	line-height: 150%;
-	font-size: .90em;
+	font-size: .93em;
+	margin-right: 15px;
+	margin-left: 15px;
 }
+
 #Articles{
 	height: auto;
 	width: 700px;
@@ -198,7 +202,7 @@ p,li{
 /*nav section*/
 #view{
 	margin:auto;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 #overview, #projectView{
@@ -251,7 +255,8 @@ p,li{
 	height: 250px;
 	background-color: #fff;
 	border-radius: 7px;
-	box-shadow: 0px 0px 40px -5px rgba(82,82,82,0.7);
+	box-shadow: 0px 0px 40px -5px rgba(82,82,82,0.4);
+	margin-top: 20px;
 	margin-bottom: 50px;
 }
 .projectCard p{
@@ -268,46 +273,52 @@ p,li{
 }
 .projectCard H2{
 	position: relative;
+	top: -10px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
+	letter-spacing: 2px;
 	font-size: 1.5em;
 	padding-left: 10px;
-	background-color: rgba(255, 255, 255,0.87);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(255, 255, 255,0.7);
+	backdrop-filter: blur(10px);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
 	z-index: 50;
 }
 .projectCard video{
 	position: relative;
-	top: -137px;
+	top: -150px;
 }
 #swiftsheet video {
-	top: -180px;
+	top: -190px;
+}
+#composer video, #airformer video {
+	top: -190px;
 }
 #select-run video {
 	top: -150px;
 }
 .info{
 	position: relative;
-	bottom: -75px;
-	background-color: rgba(255, 255, 255,0.87);
+	bottom: -55px;
+	background-color: rgba(255, 255, 255,0.7);
+	backdrop-filter: blur(10px);
 	box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.3);
 	z-index: 50;
 }
 #select-run .info, #pseudozen .info {
-	bottom: -112px;
+	bottom: -95px;
 }
 
 .tech{
-	line-height: 1.75em;
+	line-height: 2em;
 	font-size: .75em;
 	padding-bottom: 5px;
 }
 .tech span{
 	color: #fff;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 2px 5px;
 	border-radius: 3px;
 	margin:2px;
 }
@@ -323,15 +334,6 @@ p,li{
 .infra{
 	background-color: #000;
 }
-#zen{
-	background: url('../images/zen.gif') no-repeat center;
-	background-size: cover;
-}
-
-/* .priority-link {
-	color: #206BD5 !important;
-	text-decoration: underline !important;
-} */
 
 
 /*mobile*/
@@ -340,6 +342,7 @@ p,li{
 		width: 100%;
 	}
 	#Summary p {
+		padding-left: 15px;
 		padding-right: 15px;
 	}
 	.projectCard{
