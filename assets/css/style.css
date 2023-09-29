@@ -79,7 +79,10 @@ p,li{
 .separator{
 	border-style: none none dotted none;
 	border-width: 1px;
-	color: #cccccc;
+	color: #bebebe;
+}
+.info .separator {
+	color: #878787;
 }
 
 #Summary{
@@ -281,14 +284,16 @@ p,li{
 .projectCard H2{
 	position: relative;
 	top: -10px;
+	left: 10px;
+	width: fit-content;
+	border-radius: 7px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	letter-spacing: 2px;
 	font-size: 1.5em;
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px 10px;
 	background-color: rgba(255, 255, 255,0.7);
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 10px 0 rgba(82,82,82,0.3);
 	z-index: 50;
@@ -310,6 +315,7 @@ p,li{
 	position: relative;
 	bottom: -55px;
 	background-color: rgba(255, 255, 255,0.7);
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 10px 0 rgba(82,82,82,0.3);
 	z-index: 50;
