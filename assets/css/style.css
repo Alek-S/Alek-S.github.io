@@ -6,7 +6,8 @@ input {
   display: none;
 }
 ul {
-	padding-left: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 a:link {
     text-decoration: none;
@@ -36,12 +37,12 @@ a.priority-link:hover {
 	text-align: center;
 }
 .headerName{
-	font-family: 'Raleway', sans-serif;
-	font-size: 2.5em;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.7em;
 	letter-spacing: 2px;
 	color: #545454;
 	margin-bottom: 15px;
-	font-weight: 300;
+	font-weight: 100;
 }
 .profileLinks{
 	font-family: Helvetica, Arial, sans-serif;
@@ -51,8 +52,8 @@ a.priority-link:hover {
 	text-decoration: none;
 }
 h3{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 	font-size: 1em;
 	margin-left: 10px;
 	margin-top: 0;
@@ -61,9 +62,9 @@ h3{
 	color: #474747;
 }
 p,li{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: .9em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: .8em;
 	margin-left: 10px;
 	margin-top: 0px;
 	padding-top: 5px;
@@ -93,8 +94,8 @@ p,li{
 }
 #Summary p{
 	text-align: justify;
-	line-height: 150%;
-	font-size: .93em;
+	line-height: 180%;
+	font-size: .85em;
 	margin-right: 15px;
 	margin-left: 15px;
 }
@@ -108,10 +109,11 @@ p,li{
 	transition: opacity 1s ease;
 }
 #Articles H2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #FFFFFF;
-	font-size: 1.4em; 
-	font-weight: 300;
+	font-size: 1.4em;
+	font-weight: 200;
+	letter-spacing: .05em;
 	text-align: center;
 	margin: 0 0 0 0;
 	padding-top: 3px;
@@ -119,8 +121,8 @@ p,li{
 	background-color: #00cc66;
 }
 .subText{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 	font-style: italic;
 	font-size: .75em;
 	margin-left: 10px;
@@ -140,16 +142,17 @@ p,li{
 #Current{
 	height: auto;
 	width: 700px;
-	margin: 35px auto 0 auto;
+	margin: 35px auto 70px auto;
 	background: #FFFFFF;
 	box-shadow: 0 0 8px 0 rgba(82,82,82,0.39);
 	transition: opacity 1s ease;
 }		
 #Current H2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #FFFFFF;
-	font-size: 1.4em; 
-	font-weight: 300;
+	font-size: 1.4em;
+	font-weight: 200;
+	letter-spacing: .05em;
 	text-align: center;
 	margin: 0 0 0 0;
 	padding-top: 3px;
@@ -165,10 +168,11 @@ p,li{
 	transition: opacity 1s ease;
 }		
 #Skills H2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #FFFFFF;
 	font-size: 1.4em; 
-	font-weight: 300;
+	font-weight: 200;
+	letter-spacing: .05em;
 	text-align: center;
 	margin: 0 0 0 0;
 	padding-top: 3px;
@@ -178,8 +182,8 @@ p,li{
 .roleSummary{
 	margin-top: 0;
 	text-align: justify;
-	font-size: .9em;
-	line-height: 125%;
+	font-size: .85em;
+	line-height: 150%;
 	margin-bottom: 10px;
 }
 .linkIco{
@@ -194,7 +198,8 @@ p,li{
 	border: solid 1px #a6a6a6;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 	font-size: .7em;
 	color: #737373;
 	background-color: #ffffff;
@@ -217,8 +222,9 @@ p,li{
 }
 #overview, #projectView{
 	padding: 7px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: .8em;
+	font-weight: 300;
 }
 #overview{
 	border-radius: 15px 2px 2px 15px;
@@ -287,8 +293,8 @@ p,li{
 	left: 10px;
 	width: fit-content;
 	border-radius: 7px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
 	letter-spacing: 2px;
 	font-size: 1.5em;
 	padding: 5px 10px;
@@ -300,16 +306,16 @@ p,li{
 }
 .projectCard video{
 	position: relative;
-	top: -150px;
+	top: -170px;
 }
 #swiftsheet video {
-	top: -190px;
+	top: -210px;
 }
 #composer video, #airformer video {
-	top: -190px;
+	top: -210px;
 }
 #select-run video {
-	top: -150px;
+	top: -170px;
 }
 .info{
 	position: relative;
@@ -320,8 +326,12 @@ p,li{
 	box-shadow: 0 0 10px 0 rgba(82,82,82,0.3);
 	z-index: 50;
 }
-#select-run .info, #pseudozen .info {
-	bottom: -95px;
+#select-run .info{
+	bottom: -98px;
+}
+
+#pseudozen .info {
+	bottom: -75px;
 }
 
 .tech{
@@ -383,7 +393,7 @@ p,li{
 		background-color: rgba(255, 255, 255,0.85);
 	}
 	#select-run .info {
-		bottom: -70px;
+		bottom: -65px;
 	} 
 	#pseudozen .info {
 		bottom: -45px;
@@ -393,6 +403,14 @@ p,li{
 	}
 }
 @media screen and (max-width:500px){
+	#Summary p{
+		text-align: justify;
+		line-height: 160%;
+		font-size: .83em;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
 	.projectCard{
 		height: 140px;
 	}
@@ -400,10 +418,10 @@ p,li{
 		bottom: -15px;
 	}
 	#select-run .info {
-		bottom: -30px;
+		bottom: -35px;
 	} 
 	#pseudozen .info {
-		bottom: -25px;
+		bottom: -35px;
 	}
 	.tech {
 		display: none;
