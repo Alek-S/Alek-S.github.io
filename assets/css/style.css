@@ -64,12 +64,12 @@ h3{
 p,li{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	font-size: .8em;
+	font-size: .9rem;
 	margin-left: 10px;
-	margin-top: 0px;
+	margin-top: 0;
 	padding-top: 5px;
 	margin-bottom: 7px;
-	color: #6E6E6E;   
+	color: #878787;
 }
 .entry{
 	padding: 13px 15px 13px 10px;
@@ -94,8 +94,8 @@ p,li{
 }
 #Summary p{
 	text-align: justify;
-	line-height: 180%;
-	font-size: .85em;
+	line-height: 160%;
+	font-size: .87rem;
 	margin-right: 15px;
 	margin-left: 15px;
 }
@@ -162,9 +162,9 @@ p,li{
 #Skills{
 	height: auto;
 	width: 700px;
-	margin: 35px auto 0px auto;
+	margin: 35px auto 0 auto;
 	background: #FFFFFF;
-	box-shadow: 0px 0px 8px 0px rgba(82,82,82,0.39);
+	box-shadow: 0 0 8px 0 rgba(82,82,82,0.39);
 	transition: opacity 1s ease;
 }		
 #Skills H2{
